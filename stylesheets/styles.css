@@ -1,7 +1,7 @@
 /* Color Palette */
 
 :root {
-  --lightblue: #E7FBFB;
+  --cream: #E7FBFB;
   --gray: #424242;
   --brown: #914E0B;
   --orange: #FF6D24;
@@ -18,7 +18,7 @@ body, h1, h2, h3, h4, h5, h6, p, ol, ul {
   font-weight: normal;
   margin: 0;
   padding: 0;
-  background-color: var(--lightblue);
+  background-color: var(--cream);
 }
 
 img {
@@ -39,8 +39,7 @@ img {
 }
 
 .topHeader {
-  font-size: 4em;
-  color: #010B5B;
+  color: var(--orange);
   text-align: center;
 }
 
