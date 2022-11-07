@@ -1,0 +1,53 @@
+/* Color Palette */
+
+:root {
+  --lightblue: #E7FBFB;
+  --gray: #424242;
+  --brown: #914E0B;
+  --orange: #FF6D24;
+}
+
+/* Web Resets */
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+  background-color: var(--lightblue);
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+/* Styles */
+
+.grid-container-4 {
+  margin: 2%;
+  padding: 1%;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-rows: repeat (auto-fit, minmax(auto, 1fr));
+  justify-items: center;
+}
+
+.topHeader {
+  font-size: 4em;
+  color: #010B5B;
+  text-align: center;
+}
+
+.test1 {
+  color: var(--brown);
+}
+
+.test2 {
+  color: var(--gray);
+}
