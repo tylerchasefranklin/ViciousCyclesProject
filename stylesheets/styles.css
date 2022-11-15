@@ -28,13 +28,48 @@ img {
 
 /* Styles */
 
-.grid-container-4 {
+input, textarea {
+  padding: 5px;
+  width: 100%;
+}
+
+.form-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  place-items: center center;
+}
+
+.col4 {
+  display: grid;
+  grid-column: 2 / 4;
+}
+
+.grid-item-container {
+  display: grid;
+  place-items: center center;
+  padding: 5%;
+  overflow: hidden;
+}
+
+.grid-image {
+  width: 100%;
+  height: 100%;
+}
+
+.grid-container-1 {
   margin: 2%;
   padding: 1%;
   display: grid;
   grid-gap: 10px;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  grid-template-rows: repeat (auto-fit, minmax(auto, 1fr));
+}
+
+.grid-container-4 {
+  margin: 2%;
+  padding: 1%;
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
+  grid-template-rows: repeat(auto-fit, minmax(auto, 1fr));
   justify-items: center;
 }
 
@@ -43,10 +78,8 @@ img {
   text-align: center;
 }
 
-.test1 {
-  color: var(--brown);
-}
-
-.test2 {
-  color: var(--gray);
+@media only screen and (max-width: 650px) {
+    .grid-item {
+        overflow: hidden;
+    }
 }
